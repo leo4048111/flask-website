@@ -1,0 +1,138 @@
+.panel #bio{
+    color: #254048;
+}
+
+.front-image{
+    background-image: url('../img/background/bio.jpg');
+}
+
+img{
+    box-shadow:0px 0px  10px 5px #aaa;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.wrapper h2{
+    font-style: italic;
+    font-family: "Courgette";
+    font-size: 1.0rem !important;
+    font-weight: 500 !important;
+    line-height: 1.1;
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
+}
+
+.wrapper{
+    align-content: center;
+    margin-top: 20px;
+}
+
+.label{
+    min-width: 400px;
+}
+
+.text p{
+    font-family: Open Sans,Arial,sans-serif;
+    color: #666;
+    font-weight: 500;
+    min-width: 500px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 25px;
+    word-wrap: break-word;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    padding-bottom: 10px;
+}
+
+.text p a{
+    font-family: Open Sans,Arial,sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.8em;
+    word-wrap: break-word;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #23434c;
+}
+
+.text{
+    width: 560px;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 70px 0px;
+}
+
+.section_1,.section_2,.section_4,.section_5{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px
+    padding: 100px,0px;
+}
+
+.section_2,.section_5{
+    background-color: #E0EDF7;
+}
+
+.section_1 .text,.section_4 .text{
+    margin-right: 140px;
+}
+
+.section_2 .text,.section_5 .text{
+    margin-left: 140px;
+}
+
+.section_1 .label{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    transform: scaleY(1.34);
+    color: #254048;
+    text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+}
+
+.section_3{
+    display: flex;
+    background-image: url('../img/Jimi_Hendrix_on_stage.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+.section_3 .caption{
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-weight: bolder;
+    font-size: 80px;
+    position: absolute;
+    top: 2280px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.section_4 .label{
+    font-weight: 900;
+    margin-bottom:30px;
+    transform: scaleY(1.34);
+    color: #254048;
+}
+
+
+
+

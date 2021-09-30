@@ -1,0 +1,137 @@
+body {
+    font-family: Open Sans,Arial,sans-serif;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    margin: 0 0;
+    line-height: 17px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width:100%;
+    height: 2000px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 10px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: transparent;
+}
+
+/*---------------------------Main Header Configs--------------------*/
+.main-header{
+    position: sticky;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    min-width: 1200px;
+    height: 50px;
+    opacity: 100%;
+    box-shadow:0px 0px  10px 5px #aaa;
+    z-index: 10;
+    line-height: 50px;
+    margin: 0;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+#logo{
+    color: #254048;
+    font-size: 30px;
+    transform: scaleY(1.25);
+    line-height:50px;
+    display: inline;
+    margin-left: 300px;
+}
+
+.panel{
+    background-color: #ffffff;
+    display: inline;
+    margin-right: 300px;
+}
+
+.panel a{
+    font-size: 13px;
+    outline-width: 20px;
+    color: #8F8F8F;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-left-color: #f9f9f9;
+    border-left-style: solid;
+    border-left-width: 1px;
+    text-decoration: none;
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.panel a:hover{
+    color: #BCBCBC;
+    background-color: #f9f9f9;
+}
+
+/*----------------------------Front Image Configs-------------------*/
+.front-image{
+    display: block;
+    height: 700px;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 10px white dotted;
+}
+
+.caption{
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-weight: bolder;
+    font-size: 80px;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caption-description{
+    color: white;
+    font-weight: bolder;
+    line-height: 40px;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 480px;
+    left: 100px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.front-image{
+    animation: fadeIn ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+

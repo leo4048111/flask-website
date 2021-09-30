@@ -1,0 +1,22 @@
+.panel #gallery{
+    color: #254048;
+}
+
+.front-image{
+    background-image: url('../img/background/gallery.jpg');
+}
+
+.image{
+    padding:5px;
+    width: 400px;
+    height:auto;
+    cursor: pointer;
+}
+
+.image-box{
+    width:100%;
+    height:100%;
+    line-height: 100px;
+    padding-top: 80px;
+    text-align: center;
+}
