@@ -50,11 +50,11 @@ img{
     padding-bottom: 10px;
 }
 
-.text p a{
+.text a{
     font-family: Open Sans,Arial,sans-serif;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    line-height: 1.8em;
+    line-height: 25px;
     word-wrap: break-word;
     text-align: left;
     box-sizing: border-box;
@@ -70,6 +70,15 @@ img{
     color: #23434c;
 }
 
+.label{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    transform: scaleY(1.34);
+    color: #254048;
+    text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+}
+
 .text{
     width: 560px;
     line-height: 20px;
@@ -77,7 +86,7 @@ img{
     margin: 70px 0px;
 }
 
-.section_1,.section_2,.section_4,.section_5{
+.section_1,.section_2,.section_4,.section_5,.section_6{
     display: flex;
     justify-content: center;
     margin-bottom: 80px
@@ -88,21 +97,12 @@ img{
     background-color: #E0EDF7;
 }
 
-.section_1 .text,.section_4 .text{
+.section_1 .text,.section_4 .text,.section_6 .text{
     margin-right: 140px;
 }
 
 .section_2 .text,.section_5 .text{
     margin-left: 140px;
-}
-
-.section_1 .label{
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 40px;
-    transform: scaleY(1.34);
-    color: #254048;
-    text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
 }
 
 .section_3{
@@ -126,13 +126,26 @@ img{
     padding: 0px;
 }
 
-.section_4 .label{
-    font-weight: 900;
-    margin-bottom:30px;
-    transform: scaleY(1.34);
-    color: #254048;
+.section_7{
+    display: flex;
+    background-image: url('../img/Toby_Lee.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
 }
 
+.section_7 .caption{
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-weight: bolder;
+    font-size: 80px;
+    position: absolute;
+    top: 4280px;
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
