@@ -4,11 +4,14 @@ $(function(){
   var playPauseButton = $('#playPause');
   var playBackwardButton = $('#playBackward');
   var playForwardButton = $('#playForward');
+  var likeButton = $('#like');
+  var likeCount = $('#like-count');
 
   var disc = $('.disc');
   var playerInfo = $('.player-info');
   var trackName = $('.track-name');
   var albumName = $('.album-name');
+
 
 
   var trackNames = ['Ain\'t No Sunshine','The Sky Is Crying','Riviera Paradise'];
@@ -43,6 +46,7 @@ $(function(){
     playPauseButton.find('i').attr('class','fa fa-pause-circle');
     toggleDiscSpin();
     toggleInfo();
+    like(0);
   }
 
   function playBackward(){
@@ -83,14 +87,24 @@ $(function(){
       }
   }
 
+  function like(para){
+    $.get("like",{index:currentIndex,isUpdate:para}).done(function(data){
+       likeCount.text(data);
+    });
+  }
+
   function initPlayer(){
     audio = new Audio();
     currentIndex = 0;
     toggleTrack(currentIndex);
     playPauseButton.find('i').attr('class','fa fa-play-circle');
+    audio.pause();
     playPauseButton.on("click",playPause);
     playBackwardButton.on('click',playBackward);
     playForwardButton.on('click',playForward);
+    likeButton.on('click',function(){
+      like(1);
+    });
   }
 
   initPlayer();

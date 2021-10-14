@@ -6,23 +6,54 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/contact.css')}}">
 	<link rel="stylesheet" type="text/css" href="../static/css/general.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/contact.css">
-	<script type="text/javascript" src="../static/js/expandPhoto.js"></script>
-	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css">
+	<script type="text/javascript" src="../static/js/jquery-3.6.0.js"></script>
+	<title>Contact</title>
 </head>
 <body scroll="auto">
-	<div class="page-container">
-		<div class="main-header">
-			<h1 id="logo">Contact</h1>
-			<div class='panel'>
-				<a href='./home.html' id='home'><strong>HOME</strong></a>
-				<a href='./jukebox.html' id='jukebox'><strong>JUKEBOX</strong></a>
-				<a href="./bio.html" id='bio'><strong>BIO</strong></a>
-				<a href="./gallery.html" id='gallery'><strong>GALLERY</strong></a>
-				<a href='./video.html' id='video'><strong>VIDEO</strong></a>
-				<a href="./contact.html" id='contact'><strong>CONTACT</strong></a>
-			</div>
+	<div class="main-header">
+		<h1 id="logo">Contact</h1>
+		<div class='panel'>
+			<a href='./home.html' id='home'><strong>HOME</strong></a>
+			<a href='./jukebox.html' id='jukebox'><strong>JUKEBOX</strong></a>
+			<a href="./bio.html" id='bio'><strong>BIO</strong></a>
+			<a href="./gallery.html" id='gallery'><strong>GALLERY</strong></a>
+			<a href='./video.html' id='video'><strong>VIDEO</strong></a>
+			<a href="./contact.html" id='contact_header'><strong>CONTACT</strong></a>
 		</div>
-
 	</div>
+
+ <!-- From Header -->
+
+ 	
+<div class="container">  
+  <form id="contact" action="" method="post">
+  	<fieldset>
+    	<h3>Quick Contact</h3>
+  	</fieldset>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus id='name'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required id='email'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required id='phone'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required id='website'>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required id='comment'></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+</div>
+
+<script type="text/javascript" src="../static/js/contact.js"></script>
+
 </body>
 </html>

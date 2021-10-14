@@ -179,3 +179,8 @@ body{
     margin: 0 auto;
     height: 13px;
 }
+
+#like i:hover{
+    color: red;
+    cursor: pointer;
+}
