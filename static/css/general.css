@@ -35,13 +35,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     min-width: 1200px;
     height: 50px;
-    opacity: 100%;
     box-shadow:0px 0px  10px 5px #aaa;
     z-index: 10;
     line-height: 50px;
     margin: 0;
     display: flex;
     justify-content: space-between;
+    transition: height 0.3s;
+}
+
+.main-header.shrink
+{
+    height: 30px;
+    line-height: 30px;
+    opacity: 0.9;
+    transform: scaleY(0.95);
 }
 
 #logo{
@@ -51,26 +59,37 @@ h1, h2, h3, h4, h5, h6 {
     line-height:50px;
     display: inline;
     margin-left: 300px;
+    transition: 0.3s;
+}
+
+.main-header.shrink #logo{
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
 .panel{
     background-color: #ffffff;
     display: inline;
     margin-right: 300px;
+    transition: 0.3s;
+}
+
+.main-header.shrink .panel{
+    margin-right: 200px;
 }
 
 .panel a{
     font-size: 13px;
-    outline-width: 20px;
     color: #8F8F8F;
     padding: 10px 10px;
-    background-color: #ffffff;
-    border-left-color: #f9f9f9;
-    border-left-style: solid;
-    border-left-width: 1px;
     text-decoration: none;
-    margin: 0px;
     transition: 0.3s;
+}
+
+.main-header.shrink .panel a{
+    font-size: 13px;
+    padding: 9.0px;
 }
 
 .panel a:hover{

@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/general.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/home.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/font-awesome.css')}}">
 	<link rel="stylesheet" type="text/css" href="../static/css/general.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/home.css">
 	<title>Home Page</title>
+	<script type="text/javascript" src="../static/js/jquery-3.6.0.js"></script>
 </head>
 <body scroll="auto">
 	<div class="main-header">
@@ -21,10 +23,37 @@
 		</div>
 	</div>
 
-	<div class='front-image'>
-    	<p class='caption'>HOME</p>
-    	<p class='caption-description'>Welcome to the land where blues began.</p>
- 	</div>
+<div class="container">
+  <section class="background">
+    <div class="content-wrapper">
+      <p class="content-title">The Devil's Music</p>
+      <p class="content-subtitle">Everything About The Blues</p>
+      <div class='audio-control'>
+		<i class='fa fa-play'></i>
+	  </div>
+    </div>
+  </section>
+  <section class="background">
+    <div class="content-wrapper">
+      <p class="content-title">Going Way Down To Mississippi</p>
+      <p class="content-subtitle">Visit <strong><a href="./bio.html"><font color=white>Bio</font></a></strong> And Find Out the origin of the Blues</p>
+      <div class='audio-control'>
+		<i class='fa fa-play'></i>
+	  </div>
+    </div>
+  </section>
+  <section class="background">
+    <div class="content-wrapper">
+      <p class="content-title">TEST</p>
+      <p class="content-subtitle"><a><strong>hover</strong></a>TEST SUB</p>
+      <div class='audio-control'>
+		<i class='fa fa-play'></i>
+	  </div>
+    </div>
+  </section>
+</div>
 
+<script type="text/javascript" src="../static/js/header.js"></script>
+<script type="text/javascript" src="../static/js/home.js"></script>
 </body>
 </html>

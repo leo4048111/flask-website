@@ -12,8 +12,6 @@ $(function(){
   var trackName = $('.track-name');
   var albumName = $('.album-name');
 
-
-
   var trackNames = ['Ain\'t No Sunshine','The Sky Is Crying','Riviera Paradise'];
   var albumNames = ['John Mayer - Crossroads 2010','Gary B.B. Coleman - Too Much Weekend','Stevie Ray Vaughan - In Step'];
   var currentIndex = 0;
@@ -97,14 +95,17 @@ $(function(){
     audio = new Audio();
     currentIndex = 0;
     toggleTrack(currentIndex);
-    playPauseButton.find('i').attr('class','fa fa-play-circle');
     audio.pause();
+    toggleDiscSpin();
+    toggleInfo();
+    playPauseButton.find('i').attr('class','fa fa-play-circle');
     playPauseButton.on("click",playPause);
     playBackwardButton.on('click',playBackward);
     playForwardButton.on('click',playForward);
     likeButton.on('click',function(){
       like(1);
     });
+    
   }
 
   initPlayer();
