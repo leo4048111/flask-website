@@ -74,12 +74,12 @@ html, body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3); }
   .background:first-child {
-    background-image: url(../img/background/home_1.gif);
+    background-image: url(../img/background/home_1.jpg);
     transform: translateY(-15vh); }
     .background:first-child .content-wrapper {
       transform: translateY(15vh); }
   .background:nth-child(2) {
-    background-image: url(../img/background/home_2.gif); }
+    background-image: url(../img/background/home_2.jpg); }
   .background:nth-child(3) {
     background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg); }
 

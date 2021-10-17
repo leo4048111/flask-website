@@ -58,16 +58,16 @@ def like():
     count = str(models.getTrackStat(index))
     return count
 
-@app.route('/send-contact',methods=['POST','GET'])
+@app.route('/send-contact',methods=['POST'])
 def sendContact():
-    name = rq.args.get('name') or '0'
-    e_mail = rq.args.get('e_mail') or '0'
-    phone = rq.args.get('phone') or '0'
-    website = rq.args.get('website') or '0'
-    comment = rq.args.get('comment') or '0'
+    name = rq.form.get('name')
+    e_mail = rq.form.get('email')
+    phone = rq.form.get('phone')
+    website = rq.form.get('website')
+    comment = rq.form.get('comment')
 
     models.addUserContact(name, e_mail, phone, website, comment)
-    return 'Get Request Received'
+    return fk.render_template('contact.html',md=models)
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0',port='5000')

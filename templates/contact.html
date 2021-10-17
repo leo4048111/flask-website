@@ -27,24 +27,24 @@
 
  	
 <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="/send-contact" method="post">
   	<fieldset>
     	<h3>Quick Contact</h3>
   	</fieldset>
     <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus id='name'>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus id="name" name="name"/>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required id='email'>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required id="email" name="email"/>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required id='phone'>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required id="phone" name="phone"/>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required id='website'>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required id="website" name="website"/>
     </fieldset>
     <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required id='comment'></textarea>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required id="comment" name="comment"></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
