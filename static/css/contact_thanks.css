@@ -1,0 +1,169 @@
+.panel #contact_header{
+    color: #376472;
+}
+
+*,:before,:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+  background-color:#eef;
+  width: 100%;
+  margin: 0px auto;
+}
+.box{
+ width: 30%;
+ height:672px;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+ margin-left: 30px;
+ margin-top: 50px;
+ display: inline-block;
+ vertical-align: top;
+}
+.main-page,.nav-bottom a{
+  font-family:'Josefin Sans';
+  font-weight:700;
+  font-size:14px;
+  color: #fff;
+  text-transform: uppercase; 
+}
+.wrapper{
+  height: 100%;
+  padding: 20px 30px;
+}
+.main-page .wrapper{
+  background-image:url(../img/background/thanks_page.jpg);
+  background-size: cover;
+}
+.title-name{
+  margin-top: 10px;
+  font-size: 45px;
+  line-height: 50px;
+  color: white;
+}
+.title-info{
+  margin-top: 240px;
+  margin-bottom: 20px;
+  text-color: white;
+}
+
+.home-href{
+  padding: 10px 15px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.home-href{
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.home-href:hover{
+    background: #EFEFEF;
+    color: #33606E;
+}
+
+
+.nav-bottom-wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+height: 100%;
+}
+.nav-bottom a{
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+.pagination li{
+  display: inline-block;
+}
+.pagination a{
+  border-radius: 50%;
+  border: 3px solid grey;
+  margin: 5px;
+}
+.pagination .active-page a{
+  border-color: black;
+}
+.comments-box span{
+  width: 16px;
+  height: 16px;
+  background: url("") no-repeat;
+  display: inline-block;
+}
+.content, .comments{
+  font-family:'Libre Baskerville';
+  font-weight:400;
+  font-size:16px;
+  line-height:2em;
+  color:#666;   
+  background: #f8f9fa;
+}
+.content p:first-child::first-letter{
+  color: #000;
+  font-size:80px; 
+  float:left;
+  margin: 30px 20px 20px 0px;
+}
+.content p:first-child{
+  margin-bottom: 16px;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+.comments{
+  background: #fff;
+  padding: 20px 30px;
+  font-size: 14px;
+}
+.comments h3{
+  color: #000;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.comment-view {
+  margin-bottom: 20px;
+}
+.comment-view img{
+  border-radius: 50%;
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+  margin-top:10px;
+}
+.comment-view h4{
+  display: inline-block;
+  font-weight: 700;
+  color: black;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  
+}
+.comment-view span span{
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid grey;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.comment-view span{
+  font-size: 12px;
+}
+.comment-view p{
+}

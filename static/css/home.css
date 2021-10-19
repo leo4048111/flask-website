@@ -75,13 +75,17 @@ html, body {
     background-color: rgba(0, 0, 0, 0.3); }
   .background:first-child {
     background-image: url(../img/background/home_1.jpg);
-    transform: translateY(-15vh); }
+    transform: translateY(-15vh); 
+    background-size: cover;}
     .background:first-child .content-wrapper {
-      transform: translateY(15vh); }
+      transform: translateY(15vh);
+      background-size: cover; }
   .background:nth-child(2) {
-    background-image: url(../img/background/home_2.jpg); }
+    background-image: url(../img/background/home_2.jpg);
+    background-size: cover; }
   .background:nth-child(3) {
-    background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg); }
+    background-image: url(../img/background/home_3.jpg);
+    background-size: cover; }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {

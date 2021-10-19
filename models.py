@@ -1,3 +1,4 @@
+from datetime import datetime
 from dbext import db
 from sqlalchemy import func
 
@@ -15,7 +16,8 @@ class UserContact(db.Model):
     phone = db.Column(db.Text, nullable=False)
     website = db.Column(db.Text, nullable=False)
     comment = db.Column(db.Text, nullable=False)
-    contact_id = db.Column(db.Integer, primary_key=True)
+    contact_id = db.Column(db.Integer, primary_key=True, nullable=False)
+    time = db.Column(db.DateTime, default=datetime.utcnow())
 
 def updateTrackStat(index):
     track = TrackStat.query.filter(TrackStat.track_index == index).first()
@@ -27,14 +29,34 @@ def getTrackStat(index):
     #cnt = TrackStat.query.with_entities(TrackStat.thumb_up_count).first()
     return cnt[0]
 
-def getUserContact(contactId):
-    ret = db.session.query(UserContact.contact_id).filter(UserContact.contact_id == contactId).first()
-    return ret[0]
+def getUserContact():
+    #get current comment count
+    cur_comment_count = db.session.query(func.max(UserContact.contact_id)).scalar()
+    l = []
+    l.append(cur_comment_count)
+    #init query
+    query = db.session.query(UserContact.contact_id,
+                             UserContact.name,
+                             UserContact.comment,
+                             UserContact.time)
+    for elem in query:
+        l.append(dict(elem))
+
+    #return result as list
+    return l
 
 def addUserContact(name,e_mail,phone,website,comment):
     ##query database and get highest contact_id
+    query = db.session.query(UserContact.name, UserContact.comment).filter(UserContact.name == name)
+    for row in query:
+        if row.comment == comment:
+            return
 
-    id = db.session.query(func.max(UserContact.contact_id)).scalar()+1
+    id = db.session.query(func.max(UserContact.contact_id)).scalar()
+    if not id:
+        id = 1
+    else:
+        id += 1
     contact = UserContact(name=name,
                        e_mail=e_mail,
                        phone=phone,

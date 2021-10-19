@@ -6,23 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/video.css')}}">
 	<link rel="stylesheet" type="text/css" href="../static/css/general.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/video.css">
-	<script type="text/javascript" src="../static/js/expandPhoto.js"></script>
-	<title>Home Page</title>
+	<script type="text/javascript" src='../static/js/jquery-3.6.0.js'></script>
+	<title>Video</title>
 </head>
 <body scroll="auto">
-	<div class="page-container">
-		<div class="main-header">
-			<h1 id="logo"><strong>VIDEO</strong></h1>
-			<div class='panel'>
-				<a href='./home.html' id='home'><strong>HOME</strong></a>
-				<a href='./jukebox.html' id='jukebox'><strong>JUKEBOX</strong></a>
-				<a href="./bio.html" id='bio'><strong>BIO</strong></a>
-				<a href="./gallery.html" id='gallery'><strong>GALLERY</strong></a>
-				<a href='./video.html' id='video'><strong>VIDEO</strong></a>
-				<a href="./contact.html" id='contact'><strong>CONTACT</strong></a>
-			</div>
+	<div class="main-header">
+		<h1 id="logo"><strong>VIDEO</strong></h1>
+		<div class='panel'>
+			<a href='./home.html' id='home'><strong>HOME</strong></a>
+			<a href='./jukebox.html' id='jukebox'><strong>JUKEBOX</strong></a>
+			<a href="./bio.html" id='bio'><strong>BIO</strong></a>
+			<a href="./gallery.html" id='gallery'><strong>GALLERY</strong></a>
+			<a href='./video.html' id='video'><strong>VIDEO</strong></a>
+			<a href="./contact.html" id='contact'><strong>CONTACT</strong></a>
 		</div>
-
 	</div>
+
+<main>  
+  <!-- the class "videoWrapper169" means a 16:9 aspect ration video. Another option is "videoWrapper43" for 4:3. -->
+  <div class="videoWrapper videoWrapper169 js-videoWrapper">
+    <!-- YouTube iframe. -->
+    <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+    <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+    <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+    <button class="videoPoster js-videoPoster" style="background-image:url(../static/img/Toby_Lee.jpg);">Play video</button>
+  </div>
+  
+</main>
+
+<script type="text/javascript" src='../static/js/video.js'></script>
 </body>
 </html>

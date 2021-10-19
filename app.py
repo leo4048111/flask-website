@@ -1,5 +1,9 @@
+import os
+
 import flask as fk
 from flask import request as rq
+from datetime import datetime
+from flask import jsonify
 from dbext import db
 import models
 
@@ -58,16 +62,36 @@ def like():
     count = str(models.getTrackStat(index))
     return count
 
-@app.route('/send-contact',methods=['POST'])
+@app.route('/thanks',methods=['POST'])
 def sendContact():
     name = rq.form.get('name')
     e_mail = rq.form.get('email')
     phone = rq.form.get('phone')
     website = rq.form.get('website')
     comment = rq.form.get('comment')
-
     models.addUserContact(name, e_mail, phone, website, comment)
-    return fk.render_template('contact.html',md=models)
+    return fk.render_template('contact_thanks.html')
+
+@app.route('/get_comments',methods=['GET','POST'])
+def getComments():
+    ret = models.getUserContact()
+    #get result as list
+    return jsonify(ret)
+
+@app.route('/static/img/background/jukebox/',methods=['GET', 'POST'])
+def getJukeboxBG():
+    import os
+    images = []
+    for filename in os.listdir('./static/img/background/jukebox/'):
+        images.append('url(../static/img/background/jukebox/'+filename+')')
+    return jsonify(images)
+
+@app.route('/static/img/gallery/', methods=['GET', 'POST'])
+def getGalleryPhotos():
+    images = []
+    for filename in os.listdir('./static/img/gallery/'):
+        images.append('../static/img/gallery/'+filename)
+    return jsonify(images)
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port='5000')
+    app.run(debug=True,host='0.0.0.0', port='5000')

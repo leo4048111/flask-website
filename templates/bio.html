@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/general.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bio.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/font-awesome.css')}}">
 	<link rel="stylesheet" type="text/css" href="../static/css/general.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/bio.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css">
 	<script type="text/javascript" src="../static/js/jquery-3.6.0.js"></script>
 	<title>Bio</title>
 </head>
@@ -26,6 +28,10 @@
     	<p class='caption'>BIO</p>
     	<p class='caption-description'>An introduction to the blues.</p>
  	</div>
+
+ 	<a href="#top" id='scroll-button'>
+ 		<i class='fa fa-arrow-circle-up'></i>
+ 	</a>
 
  	<div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
     	<div id="innerdiv" style="position:absolute;">
@@ -149,6 +155,7 @@
 	 	<p class='caption'><strong>ARTISTS</strong></p>
 	 </div>
 
+<script type="text/javascript" src='../static/js/autoscroll.js'></script>
 <script type="text/javascript" src="../static/js/header.js"></script>
 <script type="text/javascript" src="../static/js/expandPhoto.js"></script>
 </body>
