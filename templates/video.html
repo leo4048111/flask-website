@@ -23,17 +23,23 @@
 	</div>
 
 <main>  
-  <!-- the class "videoWrapper169" means a 16:9 aspect ration video. Another option is "videoWrapper43" for 4:3. -->
-  <div class="videoWrapper videoWrapper169 js-videoWrapper">
-    <!-- YouTube iframe. -->
-    <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-    <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+  <div class="videoWrapper videoWrapper169">
+    <video autobuffer autoloop loop controls>
+    	<source src="">
+    	<param name="src" value="/media/video.oga">
+    	<param name="autoplay" value="false">
+    	<param name="autoStart" value="0">
+    	</object>
+    </video>
+
     <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-    <button class="videoPoster js-videoPoster" style="background-image:url(../static/img/Toby_Lee.jpg);">Play video</button>
+    <button class="videoPoster" style="background-image:url(../static/img/poster/video_poster.jpg);">Play video</button>
   </div>
-  
 </main>
+
+<div class='play-list'>
+	<div class='selection-poster'></div>
+</div>
 
 <script type="text/javascript" src='../static/js/video.js'></script>
 </body>

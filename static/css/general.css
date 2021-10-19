@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     top: 0px;
     box-shadow:0px 0px  10px 5px #aaa;
-    z-index: 10;
+    z-index: 100;
     line-height: 50px;
     margin: 0;
     display: flex;

@@ -12,7 +12,7 @@
   .videoWrapper169 {
     padding-top: 56%; }
 
-.videoIframe {
+video {
   position: absolute;
   top: 0;
   right: 0;
@@ -40,6 +40,7 @@
   text-indent: -999em;
   overflow: hidden;
   opacity: 1;
+  z-index: 10;
   -webkit-transition: opacity 800ms, height 0s;
   -moz-transition: opacity 800ms, height 0s;
   transition: opacity 800ms, height 0s;
@@ -91,5 +92,16 @@ main {
   max-width: 800px;
   padding-top: 70px;
   margin: 0px auto; }
+
+.selection-poster{
+  background-image: url(../img/poster/disc.png);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+.selection-poster:hover{
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=video.css.map */
