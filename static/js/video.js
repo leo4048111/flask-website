@@ -8,8 +8,14 @@ $(function(){
   });
 
   selectionPoster.on('click',function(){
-    $('video').attr('src','../static/video/baby_please_dont_leave_me.mp4');
+    var src = $(this).find('a').attr('href');
+    $('video').attr('src',src);
     videoStop(wrapper);
+    selectionPoster.each(function() {
+      $(this).removeClass('selected');
+    });
+    $(this).addClass('selected');
+
   })
 });
 

@@ -93,12 +93,5 @@ def getGalleryPhotos():
         images.append('../static/img/gallery/'+filename)
     return jsonify(images)
 
-@app.route('/static/video/', methods=['GET', 'POST'])
-def getVideos():
-    videos = []
-    for filename in os.listdir('./static/video'):
-        videos.append('../static/video/'+filename)
-    return jsonify(videos)
-
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0', port='5000')

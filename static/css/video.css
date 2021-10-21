@@ -5,7 +5,7 @@
 .videoWrapper {
   position: relative;
   width: 100%;
-  height: 0;
+  height: 0px;
   background-color: #000; }
   .videoWrapper43 {
     padding-top: 75%; }
@@ -21,6 +21,10 @@ video {
   width: 100%;
   height: 100%;
   background-color: transparent; }
+
+HR{
+  margin: 40px auto;
+}
 
 .videoPoster {
   position: absolute;
@@ -86,22 +90,73 @@ video {
     transition-delay: 0s, 800ms; }
 
 body {
-  font-family: avenir,sans-serif; }
+  background-color: #010101;
+  background-image: url('../img/background/video.jpg');
+  background-size: cover;
+  font-family: avenir,sans-serif; 
+  z-index: -100;}
 
 main {
   max-width: 800px;
   padding-top: 70px;
   margin: 0px auto; }
 
+.play-list{
+  margin: 40px auto;
+  width: 1200px;
+  height: auto;
+}
+
 .selection-poster{
-  background-image: url(../img/poster/disc.png);
+  float: left;
+  margin: 40px;
   width: 300px;
   height: 300px;
   background-size: cover;
+  background-position: center;
+  transition: 0.3s ease;
+  border: 2px #ffffff solid;
+}
+
+.selection-poster .description{
+  z-index: 5;
+  font-color: white;
+  font-family: "Courgette";
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.poster_1{
+  background-image: url(../img/poster/baby_please_dont_leave_me.jpg);
+}
+
+.poster_2{
+  background-image: url(../img/poster/rc_in_studio.jpg);
+}
+
+.poster_3{
+  background-image: url(../img/poster/the_thrill_is_gone_2010.jpg);
+}
+
+.poster_4{
+  background-image: url(../img/poster/i_put_a_spell_on_you.jpg);
+}
+
+.poster_5{
+  background-image: url(../img/poster/time_makes_two.jpg);
 }
 
 .selection-poster:hover{
+  border: 2px red solid;
   cursor: pointer;
+}
+
+.selection-poster.selected{
+  border: 2px red solid;
 }
 
 /*# sourceMappingURL=video.css.map */
