@@ -14,7 +14,7 @@ html, body {
     text-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
 }
 
-.audio-control:hover{
+.audio-control i:hover{
     cursor: pointer;
 }
 
@@ -87,20 +87,26 @@ html, body {
     background-image: url(../img/background/home_3.jpg);
     background-size: cover; }
   .background:nth-child(4) {
-    background-image: url(../img/background/home_3.jpg);
+    background-image: url(../img/background/home_4.jpg);
+    background-size: cover; }
+    .background:nth-child(5) {
+    background-image: url(../img/background/home_5.jpg);
     background-size: cover; }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 4; }
+  z-index: 5; }
 
 .background:nth-child(2) {
-  z-index: 3; }
+  z-index: 4; }
 
 .background:nth-child(3) {
-  z-index: 2; }
+  z-index: 3; }
 
 .background:nth-child(4) {
+  z-index: 2; }
+
+.background:nth-child(5) {
   z-index: 1; }
 
 .content-wrapper {

@@ -199,7 +199,7 @@ body{
 .track-name{
     margin: 0 auto;
     color: #030303;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
     height: 17px;
 }
@@ -289,11 +289,11 @@ HR{
   position: relative;
   margin: 40px;
   top: 500px;
-  display: flex;
 }
 
 .selection-poster{
-    min-width: 200px;
+  float: left;
+  min-width: 200px;
   margin: 50px;
   width: 200px;
   height: 200px;
@@ -324,11 +324,15 @@ HR{
 }
 
 .poster_2{
-  background-image: url(../img/album/71Gt46aX9Z4-MQ.jpg);
+  background-image: url(../img/album/Q_4e2-SzEpc-MQ.jpg);
 }
 
 .poster_3{
   background-image: url(../img/album/x70G-NhyUPI-MQ.jpg);
+}
+
+.poster_4{
+  background-image: url(../img/album/Bcus42ihkTI-MQ.jpg);
 }
 
 .selection-poster:hover{

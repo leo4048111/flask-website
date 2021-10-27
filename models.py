@@ -21,12 +21,20 @@ class UserContact(db.Model):
 
 def updateTrackStat(index):
     track = TrackStat.query.filter(TrackStat.track_index == index).first()
+    if not track:
+        row = TrackStat(track_index=index,
+                        thumb_up_count=1)
+        db.session.add(row)
+        db.session.commit()
+        return
+
     track.thumb_up_count += 1
     db.session.commit()
 
 def getTrackStat(index):
     cnt = db.session.query(TrackStat.thumb_up_count).filter(TrackStat.track_index == index).first()
-    #cnt = TrackStat.query.with_entities(TrackStat.thumb_up_count).first()
+    if not cnt:
+        return 0
     return cnt[0]
 
 def getUserContact():

@@ -1,9 +1,13 @@
 $(function(){
 	var comment_count = $('#comment-count');
 	var comment_section = $('.comment-view');
+	var refresh = $('.refresh-button');
+
+	refresh.on('click',updateComment);
 
 
-	$.get("get_comments",function(data){
+	function updateComment(){
+		$.get("get_comments",function(data){
 	}).done(function(data){
 		//got data as json
 		/*alert(JSON.stringify(data))*/
@@ -25,6 +29,10 @@ $(function(){
 
 		});
 
-	});
+	})
+};
+
+updateComment();
+
 		
 });

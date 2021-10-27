@@ -11,7 +11,7 @@ var totalSlideNumber = $(".background").length;
 $(function(){
   var audio = new Audio();
   audio.src = '../static/audio/lost_in_the_storm_justin_johnson.mp3'
-  $(".audio-control").on('click',function(){
+  $(".audio-control").find('i').on('click',function(){
     if(audio.paused)
     {
       $(".audio-control").find('i').attr('class','fa fa-pause');

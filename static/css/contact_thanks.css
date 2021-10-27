@@ -66,6 +66,36 @@ body{
     color: #33606E;
 }
 
+.refresh-button{
+  font-size: 25px;
+  top: -10px;
+  transition: 0.3s ease;
+}
+
+.refresh-button i{
+  color: black;
+  transition: 0.3s ease;
+}
+
+.refresh-button i:hover::after{
+}
+
+.refresh-button i:hover{
+  cursor: pointer;
+  animation: loading 1.5s 0.2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loading {
+  0 {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .nav-bottom-wrapper{
 display: flex;

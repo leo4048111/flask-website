@@ -150,6 +150,11 @@ main {
   background-image: url(../img/poster/time_makes_two.jpg);
 }
 
+.poster_6{
+  background-image: url(../img/poster/aint_no_sunshine.jpg);
+}
+
+
 .selection-poster:hover{
   border: 2px red solid;
   cursor: pointer;
