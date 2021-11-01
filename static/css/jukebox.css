@@ -287,14 +287,15 @@ HR{
 
 .play-list{
   position: relative;
-  margin: 40px;
+  margin: 40px auto;
   top: 500px;
+  width: 1516px;
 }
 
 .selection-poster{
   float: left;
   min-width: 200px;
-  margin: 50px;
+  margin: 48px;
   width: 200px;
   height: 200px;
   transition: 0.3s ease;
@@ -328,11 +329,35 @@ HR{
 }
 
 .poster_3{
-  background-image: url(../img/album/x70G-NhyUPI-MQ.jpg);
+  background-image: url(../img/album/Sm8q1q9Oqn0-MQ.jpg);
 }
 
 .poster_4{
   background-image: url(../img/album/Bcus42ihkTI-MQ.jpg);
+}
+
+.poster_5{
+  background-image: url(../img/album/H6CRxNr5b5E-MQ.jpg);
+}
+
+.poster_6{
+  background-image: url(../img/album/yDjNyK0KqmE-MQ.jpg);
+}
+
+.poster_7{
+  background-image: url(../img/album/EM-BB020-CW-copy-e1624811209405.jpg);
+}
+
+.poster_8{
+  background-image: url(../img/album/11WUKW5ISfs-MQ.jpg);
+}
+
+.poster_9{
+  background-image: url(../img/album/9_2FrmeV_Yg-MQ.jpg);
+}
+
+.poster_10{
+  background-image: url(../img/album/Yftyjsm7JNA-MQ.jpg);
 }
 
 .selection-poster:hover{
