@@ -1,2 +1,2 @@
 # flask_website
-## Tongji university CSAPP homework: build a website with flask, got a 5.0 as well...
+## Tongji university CSAPP homework: build a website with flask
